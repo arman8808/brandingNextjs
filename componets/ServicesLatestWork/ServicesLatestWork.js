@@ -4,9 +4,11 @@ import "./ServicesLatestWork.css";
 
 import { showcaseData } from "../portfolioShowcaseData";
 
-import { Link } from "react-router-dom";
 
-import PortfolioSeeMoreButtonImg from "../../Assets/Portfolio/PortfolioSeeMoreButtonImg.webp";
+
+import PortfolioSeeMoreButtonImg from "../../public/Assets/Portfolio/PortfolioSeeMoreButtonImg.webp";
+import Link from "next/link";
+import Image from "next/image";
 
 function ServicesLatestWork({ serviceName }) {
   const serviceData = showcaseData.find(
@@ -21,7 +23,7 @@ function ServicesLatestWork({ serviceName }) {
       <div className="services-latest-work-gallery">
         <div className="services-latest-work-gallery-images">
           {imagesToShow.map((image, index) => (
-            <img
+            <Image width={0} height={0}
               key={index}
               src={image}
               alt={`Service ${serviceName} ${index + 1}`}
@@ -30,9 +32,9 @@ function ServicesLatestWork({ serviceName }) {
         </div>
 
         <Link
-          to={`/portfolio/#${serviceName.toLowerCase().replace(/\s/g, "-")}`}
+          href={`/portfolio/#${serviceName.toLowerCase().replace(/\s/g, "-")}`}
         >
-          <img
+          <Image width={0} height={0}
             src={PortfolioSeeMoreButtonImg}
             alt={`See more of ${serviceName}`}
           />

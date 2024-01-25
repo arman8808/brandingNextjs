@@ -2,15 +2,16 @@ import React from "react";
 
 import "./AnimatedGlobe.css";
 
-import GlobeTopImg from "../../Assets/Globe/GlobeTopImg.webp";
-import GlobeBGImg from "../../Assets/Globe/GlobeBGImg.webp";
+import GlobeTopImg from "../../public/Assets/Globe/GlobeTopImg.webp";
+import GlobeBGImg from "../../public/Assets/Globe/GlobeBGImg.webp";
+import Image from "next/image";
 
 function AnimatedGlobe({ frontImage }) {
   return (
     <div className="services-globe-container">
-      <img src={GlobeBGImg} className="services-globe-container-background" />
-      <img src={GlobeTopImg} className="services-globe-container-top" />
-      <img src={frontImage} className="services-globe-container-top-main" />
+      <Image width={0} height={0} src={GlobeBGImg} className="services-globe-container-background" />
+      <Image width={0} height={0} src={GlobeTopImg} className="services-globe-container-top" />
+      <Image width={0} height={0} src={frontImage} className="services-globe-container-top-main" />
     </div>
   );
 }

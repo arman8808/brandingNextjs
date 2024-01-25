@@ -3,6 +3,7 @@ import React from "react";
 import "./ServicesInfoContainer.css";
 
 import AnimatedGlobe from "../AnimatedGlobe/AnimatedGlobe";
+import Image from "next/image";
 
 function ServicesInfoContainer({
   leftGlobeFrontImg,
@@ -23,7 +24,7 @@ function ServicesInfoContainer({
             <p key={index}>{para}</p>
           ))}
         </div>
-        <img src={rightSideImg} alt="Info Container" />
+        <Image width={0} height={0} src={rightSideImg} alt="Info Container" />
       </div>
     </div>
   );

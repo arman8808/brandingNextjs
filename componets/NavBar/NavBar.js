@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect, useRef, useState } from "react";
 import "./NavBar.css";
 import MobileNav from "../MobileNav/MobileNav";
@@ -14,7 +15,12 @@ import Link from "next/link";
 // import { useRouter } from "next/router";
 import { usePathname } from "next/navigation";
 
-function NavBar({ handleShrink }) {
+function NavBar() {
+  const [shrink, setShrink] = useState(false);
+
+  const handleShrink = () => {
+    setShrink(!shrink);
+  };
   const location = usePathname();
   const currentPath = location.pathname;
 

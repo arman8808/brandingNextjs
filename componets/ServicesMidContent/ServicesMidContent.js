@@ -2,20 +2,21 @@ import React from "react";
 
 import "./ServicesMidContent.css";
 
-import ServicesMidLeftBgImg from "../../Assets/Services-Web-Dev/ServiesMidLeftBgImg.webp";
-import ServicesMidLeftBgBigImg from "../../Assets/Services-Creative-Design/ServicesMidLeftBgBigImg.webp";
+import ServicesMidLeftBgImg from "../../public/Assets/Services-Web-Dev/ServiesMidLeftBgImg.webp";
+import ServicesMidLeftBgBigImg from "../../public/Assets/Services-Creative-Design/ServicesMidLeftBgBigImg.webp";
 
 import { NoBackpackSharp } from "@mui/icons-material";
+import Image from "next/image";
 
 function ServicesMidContent({ data }) {
   const servicesMidLeftBgStyle = {
-    backgroundImage: `url("${ServicesMidLeftBgImg}")`,
+    backgroundImage: `url("/Assets/Services-Web-Dev/ServiesMidLeftBgImg.webp")`,
     backgroundSize: "contain",
     backgroundRepeat: "no-repeat",
   };
 
   const servicesMidLeftBgBigStyle = {
-    backgroundImage: `url("${ServicesMidLeftBgBigImg}")`,
+    backgroundImage: `url("/Assets/Services-Creative-Design/ServicesMidLeftBgBigImg.webp")`,
     backgroundSize: "contain",
     backgroundRepeat: "no-repeat",
   };
@@ -125,12 +126,12 @@ function ServicesMidContent({ data }) {
         )}
       </div>
       <div className="services-mid-right">
-        <img
+        <Image width={0} height={0}
           className="services-div-main-img"
           src={data.mainImg}
           alt="Services"
         />
-        <img
+        <Image width={0} height={0}
           className="services-mid-right-img"
           src={data.rightImg}
           alt="Services"

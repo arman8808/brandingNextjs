@@ -1,12 +1,14 @@
+'use client'
 import React, { useState } from "react";
 
 import "./ServicesFAQ.css";
 
-import ServicesFaqHeadRightImg from "../../Assets/ServicesFAQ/ServicesFaqHeadRightImg.png";
-import ServicesFaqHeadBottomImg from "../../Assets/ServicesFAQ/ServicesFaqHeadBottomImg.png";
-import ServicesFaqBottomImg from "../../Assets/ServicesFAQ/ServicesFaqBottomImg.jpg";
+import ServicesFaqHeadRightImg from "../../public/Assets/ServicesFAQ/ServicesFaqHeadRightImg.png";
+import ServicesFaqHeadBottomImg from "../../public/Assets/ServicesFAQ/ServicesFaqHeadBottomImg.png";
+import ServicesFaqBottomImg from "../../public/Assets/ServicesFAQ/ServicesFaqBottomImg.jpg";
 
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Image from "next/image";
 
 function ServicesFAQ({ faqData }) {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -20,9 +22,9 @@ function ServicesFAQ({ faqData }) {
       <div className="services-faq-heading-section">
         <div className="services-faq-heading-top">
           <h2>FAQ</h2>
-          <img src={ServicesFaqHeadRightImg} alt="FAQ" />
+          <Image width={0} height={0} src={ServicesFaqHeadRightImg} alt="FAQ" />
         </div>
-        <img src={ServicesFaqHeadBottomImg} alt="FAQ" />
+        <Image width={0} height={0} src={ServicesFaqHeadBottomImg} alt="FAQ" />
       </div>
       <div className="services-faq-qa-section">
         {faqData.map((item, index) => (
@@ -48,7 +50,7 @@ function ServicesFAQ({ faqData }) {
           </div>
         ))}
       </div>
-      <img src={ServicesFaqBottomImg} alt="FAQ" />
+      <Image width={0} height={0} src={ServicesFaqBottomImg} alt="FAQ" />
     </div>
   );
 }

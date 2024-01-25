@@ -47,7 +47,7 @@ function Footer() {
       <div className="footer-top">
         <div className="footer-top-left">
           <Link href={internalLinks.home}>
-            <Image width={0} height={0} src={MainLogoFooter} alt="Logo" />
+            <Image width={200} height={64} src={MainLogoFooter} alt="Logo" />
           </Link>
           <span>
             An avant-garde marketing agency in Dubai known for elevating brands
