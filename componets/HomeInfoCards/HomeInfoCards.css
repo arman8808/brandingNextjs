@@ -77,6 +77,11 @@
   border-radius: 5px;
 }
 
+.home-info-card > img {
+  width: 100px;
+  height: 100px;
+}
+
 /* .home-info-card:hover {
   height: 300px;
   box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.5);
@@ -99,7 +104,7 @@
   overflow: hidden;
 
   font-size: 16px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 .home-info-card-text-section > h4 {

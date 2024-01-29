@@ -33,6 +33,7 @@
 
 .services-faq-section > img {
   width: 60%;
+  height: auto;
 }
 
 .services-faq-heading-section {
@@ -47,6 +48,7 @@
 
 .services-faq-heading-section > img {
   width: 100%;
+  height: auto;
 }
 
 .services-faq-heading-top {
@@ -64,6 +66,7 @@
 
 .services-faq-heading-top > img {
   width: 40%;
+  height: auto;
 }
 
 .services-faq-qa-section {

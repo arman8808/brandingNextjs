@@ -1,8 +1,6 @@
 import React from "react";
 import "./InfoContainer.css";
 
-
-
 import ReadMoreButtonImg from "../../public/Assets/Home/ReadMoreButtonImg.webp";
 import AboutUsInfoSectionRightImg from "../../public/Assets/AboutUs/AboutUsInfoSectionRightImg.webp";
 
@@ -24,9 +22,24 @@ function InfoContainer({
   return (
     <div className="info-container-section">
       <div className="info-container-image-section">
-        <Image width={0} height={0} src={GlobeBGImg} className="info-globe-background" />
-        <Image width={0} height={0} src={GlobeTopImg} className="info-globe-top" />
-        <Image width={0} height={0} src={image} className="info-globe-top-main" />
+        <Image
+          // width={0}
+          // height={"auto"}
+          src={GlobeBGImg}
+          className="info-globe-background"
+        />
+        <Image
+          // width={0}
+          // height={0}
+          src={GlobeTopImg}
+          className="info-globe-top"
+        />
+        <Image
+          // width={0}
+          // height={0}
+          src={image}
+          className="info-globe-top-main"
+        />
       </div>
       <div className="info-container-text-section">
         <h4 className="app-yellow-text">{subheading}</h4>
@@ -105,7 +118,12 @@ function InfoContainer({
               <Image width={0} height={0} src={ReadMoreButtonImg} />
             </Link>
           ) : (
-            <Image width={0} height={0} src={AboutUsInfoSectionRightImg} alt="About Us" />
+            <Image
+              width={0}
+              height={0}
+              src={AboutUsInfoSectionRightImg}
+              alt="About Us"
+            />
           )}
         </div>
       </div>

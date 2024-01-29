@@ -198,8 +198,10 @@
 
 .services-div-main-img {
   width: 80%;
+  height: auto;
 }
 
 .services-mid-right-img {
   width: 10%;
+  height: auto;
 }

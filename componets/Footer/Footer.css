@@ -296,6 +296,7 @@
 
 .footer-top-left > a > img {
   width: 200px;
+  height: auto;
 
   border-radius: 20px;
 }
@@ -429,6 +430,7 @@
 
 .footer-top-right > img {
   width: 100%;
+  height: auto;
 }
 
 .footer-top-right-input-section {

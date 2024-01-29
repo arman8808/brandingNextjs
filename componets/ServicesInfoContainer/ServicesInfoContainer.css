@@ -32,7 +32,7 @@
   }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 1300px) {
+@media only screen and (min-width: 481px) and (max-width: 1200px) {
   .services-info-container {
     flex-direction: column !important;
     width: 90% !important;
@@ -78,6 +78,8 @@
   width: 100%;
 
   height: auto;
+
+  min-height: 80vh;
 
   display: flex;
   justify-content: space-between;
@@ -131,4 +133,7 @@
 .services-info-right > img {
   display: flex;
   align-self: flex-end;
+
+  width: 20%;
+  height: 20%;
 }

@@ -218,6 +218,7 @@
 
 .creative-works-main-left > img {
   width: 250px;
+  height: auto;
 }
 
 .creative-works-main-left > div > h4 {
@@ -315,6 +316,7 @@
 
 .creative-works-main-collage > img {
   width: 350px;
+  height: auto;
   transform: scale(0.8);
   border-radius: 10px;
 

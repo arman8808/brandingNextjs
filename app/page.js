@@ -2,7 +2,7 @@
 // import NavBar from "@componets/NavBar/NavBar";
 import NavBar from "@/componets/NavBar/NavBar";
 import Image from "next/image";
-import '@/styles/globals.css'
+import "@/styles/globals.css";
 import { useEffect, useRef, useState } from "react";
 import HomeBannerImg from "../public/Assets/Home/HomeBannerImg.jpeg";
 import HomeHelpBgImg from "../public/Assets/Home/HomeHelpBgImg.jpeg";
@@ -41,7 +41,7 @@ import NewHelpSection from "@/componets/NewHelpSection/NewHelpSection";
 import CreativeWorksSection from "@/componets/CreativeWorksSection/CreativeWorksSection";
 import AliceCarousel from "react-alice-carousel";
 import Marquee from "react-fast-marquee";
-console.log(HomeBannerImg)
+console.log(HomeBannerImg);
 export default function Home() {
   const homeBannerStyle = {
     backgroundImage: `url("/Assets/Home/HomeBannerImg.jpeg")`,
@@ -275,9 +275,7 @@ export default function Home() {
     }
   };
   return (
-    <main
-      className={""}
-    >
+    <main className={""}>
       {/* <NavBar handleShrink={handleShrink} /> */}
       <div className="home-section app-sections">
         <div className="home-banner-main" style={homeBannerStyle}>
@@ -473,11 +471,21 @@ export default function Home() {
               </div>
             </div>
             <div className="home-about-us-top-new-right">
-              <Image width={0} height={0} src={HomeAboutUsNewInfoMainImg} alt="About Us Main" />
+              <Image
+                width={0}
+                height={0}
+                src={HomeAboutUsNewInfoMainImg}
+                alt="About Us Main"
+              />
             </div>
           </div>
           <div className="home-about-us-new-bottom">
-            <Image width={0} height={0} src={HomeAboutUsNewInfoBottomImg} alt="About US" />
+            <Image
+              width={0}
+              height={0}
+              src={HomeAboutUsNewInfoBottomImg}
+              alt="About US"
+            />
           </div>
         </div>
 
@@ -557,7 +565,6 @@ export default function Home() {
           </div>
         </div>
 
-
         <div className="home-our-clients-showcase-section">
           <Image width={0} height={0} src={HomeClientsDogImg} alt="Dog" />
           <div
@@ -571,11 +578,21 @@ export default function Home() {
             </div>
             <div className="about-us-clients-marquee-section">
               <Marquee direction="left">
-                <Image width={0} height={0} src={AboutUsClientsMarqueeImg1} alt="Our Clients" />
+                <Image
+                  width={0}
+                  height={0}
+                  src={AboutUsClientsMarqueeImg1}
+                  alt="Our Clients"
+                />
               </Marquee>
               <br />
               <Marquee direction="right">
-                <Image width={0} height={0} src={AboutUsClientsMarqueeImg2} alt="Our Clients" />
+                <Image
+                  width={0}
+                  height={0}
+                  src={AboutUsClientsMarqueeImg2}
+                  alt="Our Clients"
+                />
               </Marquee>
               <br />
             </div>
@@ -583,7 +600,12 @@ export default function Home() {
         </div>
 
         <div className="page-bottom-monkey">
-          <Image width={0} height={0} src={AboutUsMonkeyImg} alt="Clever Monkey" />
+          <Image
+            width={0}
+            height={0}
+            src={AboutUsMonkeyImg}
+            alt="Clever Monkey"
+          />
         </div>
       </div>
     </main>

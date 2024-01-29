@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useEffect, useRef, useState } from "react";
 import "./NavBar.css";
 import MobileNav from "../MobileNav/MobileNav";
@@ -104,14 +104,14 @@ function NavBar() {
       ) : (
         <>
           <div className="nav-main-logo">
-            <Link href={'/'}>
+            <Link href={"/"}>
               <Image width={164} height={44} src={MainLogo} alt="Nav Rec" />
             </Link>
           </div>
           <ul>
             <li>
               <Link
-                href={'/'}
+                href={"/"}
                 className={
                   currentPath === internalLinks.home
                     ? "active-link"
@@ -123,7 +123,7 @@ function NavBar() {
             </li>
             <li>
               <Link
-                href={'/portfolio'}
+                href={"/portfolio"}
                 className={
                   currentPath === internalLinks.portfolio
                     ? "active-link"
@@ -156,7 +156,7 @@ function NavBar() {
               >
                 <div>
                   <li>
-                    <Link href={'/services/web-development'}>
+                    <Link href={"/services/web-development"}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="95"
@@ -176,12 +176,17 @@ function NavBar() {
                           fill="#FFBB00"
                         />
                       </svg>
-                      <Image width={215} height={106} src={NavServiceWebDevImg} alt="services" />
+                      <Image
+                        width={215}
+                        height={106}
+                        src={NavServiceWebDevImg}
+                        alt="services"
+                      />
                       Web Development & Design
                     </Link>
                   </li>
                   <li>
-                    <Link href={'/services/branding'}>
+                    <Link href={"/services/branding"}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="95"
@@ -201,12 +206,17 @@ function NavBar() {
                           fill="#FFBB00"
                         />
                       </svg>
-                      <Image width={215} height={106} src={NavServiceBrandingImg} alt="services" />
+                      <Image
+                        width={215}
+                        height={106}
+                        src={NavServiceBrandingImg}
+                        alt="services"
+                      />
                       Branding
                     </Link>
                   </li>
                   <li>
-                    <Link href={'/services/creative-design'}>
+                    <Link href={"/services/creative-design"}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="95"
@@ -226,7 +236,12 @@ function NavBar() {
                           fill="#FFBB00"
                         />
                       </svg>
-                      <Image width={215} height={106} src={NavServiceCreativeDesignImg} alt="services" />
+                      <Image
+                        width={215}
+                        height={106}
+                        src={NavServiceCreativeDesignImg}
+                        alt="services"
+                      />
                       Creative Designing
                     </Link>
                   </li>
@@ -234,7 +249,7 @@ function NavBar() {
 
                 <div>
                   <li>
-                    <Link href={'/services/seo'}>
+                    <Link href={"/services/seo"}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="95"
@@ -254,12 +269,17 @@ function NavBar() {
                           fill="#FFBB00"
                         />
                       </svg>
-                      <Image width={215} height={106} src={NavServiceSEOImg} alt="services" />
+                      <Image
+                        width={215}
+                        height={106}
+                        src={NavServiceSEOImg}
+                        alt="services"
+                      />
                       Search Engine Optimization
                     </Link>
                   </li>
                   <li>
-                    <Link href={'/services/social-media-management'}>
+                    <Link href={"/services/social-media-management"}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="95"
@@ -279,12 +299,17 @@ function NavBar() {
                           fill="#FFBB00"
                         />
                       </svg>
-                      <Image width={215} height={106} src={NavServiceSMMImg} alt="services" />
+                      <Image
+                        width={215}
+                        height={106}
+                        src={NavServiceSMMImg}
+                        alt="services"
+                      />
                       Social Media Management
                     </Link>
                   </li>
                   <li>
-                    <Link href={'/services/performance-marketing'}>
+                    <Link href={"/services/performance-marketing"}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="95"
@@ -304,7 +329,12 @@ function NavBar() {
                           fill="#FFBB00"
                         />
                       </svg>
-                      <Image width={215} height={106} src={NavServicePerfMarketingImg} alt="services" />
+                      <Image
+                        width={215}
+                        height={106}
+                        src={NavServicePerfMarketingImg}
+                        alt="services"
+                      />
                       Performance Marketing
                     </Link>
                   </li>
@@ -324,7 +354,7 @@ function NavBar() {
 
             <li>
               <Link
-                href={'/about'}
+                href={"/about"}
                 className={
                   currentPath === internalLinks.aboutUs
                     ? "active-link"
@@ -339,7 +369,7 @@ function NavBar() {
             {/* <li>Project</li> */}
             <li>
               <Link
-                href={'/contact'}
+                href={"/contact"}
                 className={
                   currentPath === internalLinks.contact
                     ? "active-link"

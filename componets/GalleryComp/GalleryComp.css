@@ -33,6 +33,7 @@
 
 .gallery-cross-icon > svg {
   width: 100%;
+  height: auto;
   cursor: pointer;
 }
 
@@ -53,12 +54,14 @@
   align-items: center;
 
   width: 50%;
+  height: auto;
 
   gap: 2vw;
 }
 
 .large-image img {
   width: 80%;
+  height: auto;
 }
 
 .small-images {
@@ -89,6 +92,7 @@
 
 .small-images img {
   width: 100px;
+  height: auto;
 
   cursor: pointer;
   transition: border 0.3s ease-in-out;

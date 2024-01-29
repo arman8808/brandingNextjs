@@ -47,6 +47,7 @@
 
 .services-latest-work-gallery-images > img {
   width: 30%;
+  height: auto;
 }
 
 .services-latest-work-gallery > a {

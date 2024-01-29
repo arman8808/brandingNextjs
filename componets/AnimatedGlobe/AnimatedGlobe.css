@@ -19,6 +19,7 @@
 
 .services-globe-container > img {
   width: 100%;
+  height: auto;
 }
 
 .services-globe-container-background {
