@@ -14,6 +14,7 @@ import NavServicePerfMarketingImg from "@/./public/Assets/NavBar/NavServicePerfM
 import Link from "next/link";
 // import { useRouter } from "next/router";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 function NavBar() {
   const [shrink, setShrink] = useState(false);
@@ -22,7 +23,7 @@ function NavBar() {
     setShrink(!shrink);
   };
   const location = usePathname();
-  const currentPath = location.pathname;
+  const currentPath = location;
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -98,12 +99,13 @@ function NavBar() {
   return (
     <nav className="main-nav">
       {isMobile ? (
-        <MobileNav isMobile={isMobile} handleShrink={handleShrink} />
+        // <MobileNav isMobile={isMobile} handleShrink={handleShrink} />
+        <h1>gg</h1>
       ) : (
         <>
           <div className="nav-main-logo">
             <Link href={'/'}>
-              <img src={MainLogo} alt="Nav Rec" />
+              <Image width={164} height={44} src={MainLogo} alt="Nav Rec" />
             </Link>
           </div>
           <ul>
@@ -121,7 +123,7 @@ function NavBar() {
             </li>
             <li>
               <Link
-                href={'/'}
+                href={'/portfolio'}
                 className={
                   currentPath === internalLinks.portfolio
                     ? "active-link"
@@ -154,7 +156,7 @@ function NavBar() {
               >
                 <div>
                   <li>
-                    <Link href={'/'}>
+                    <Link href={'/servieces/web-development'}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="95"
@@ -174,12 +176,12 @@ function NavBar() {
                           fill="#FFBB00"
                         />
                       </svg>
-                      <img src={NavServiceWebDevImg} alt="services" />
+                      <Image width={215} height={106} src={NavServiceWebDevImg} alt="services" />
                       Web Development & Design
                     </Link>
                   </li>
                   <li>
-                    <Link href={'/'}>
+                    <Link href={'/servieces/branding'}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="95"
@@ -199,12 +201,12 @@ function NavBar() {
                           fill="#FFBB00"
                         />
                       </svg>
-                      <img src={NavServiceBrandingImg} alt="services" />
+                      <Image width={215} height={106} src={NavServiceBrandingImg} alt="services" />
                       Branding
                     </Link>
                   </li>
                   <li>
-                    <Link href={'/'}>
+                    <Link href={'/servieces/creative-design'}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="95"
@@ -224,7 +226,7 @@ function NavBar() {
                           fill="#FFBB00"
                         />
                       </svg>
-                      <img src={NavServiceCreativeDesignImg} alt="services" />
+                      <Image width={215} height={106} src={NavServiceCreativeDesignImg} alt="services" />
                       Creative Designing
                     </Link>
                   </li>
@@ -232,7 +234,7 @@ function NavBar() {
 
                 <div>
                   <li>
-                    <Link href={'/'}>
+                    <Link href={'/servieces/seo'}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="95"
@@ -252,12 +254,12 @@ function NavBar() {
                           fill="#FFBB00"
                         />
                       </svg>
-                      <img src={NavServiceSEOImg} alt="services" />
+                      <Image width={215} height={106} src={NavServiceSEOImg} alt="services" />
                       Search Engine Optimization
                     </Link>
                   </li>
                   <li>
-                    <Link href={'/'}>
+                    <Link href={'/servieces/social-media-management'}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="95"
@@ -277,12 +279,12 @@ function NavBar() {
                           fill="#FFBB00"
                         />
                       </svg>
-                      <img src={NavServiceSMMImg} alt="services" />
+                      <Image width={215} height={106} src={NavServiceSMMImg} alt="services" />
                       Social Media Management
                     </Link>
                   </li>
                   <li>
-                    <Link href={'/'}>
+                    <Link href={'/servieces/performance-marketing'}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="95"
@@ -302,7 +304,7 @@ function NavBar() {
                           fill="#FFBB00"
                         />
                       </svg>
-                      <img src={NavServicePerfMarketingImg} alt="services" />
+                      <Image width={215} height={106} src={NavServicePerfMarketingImg} alt="services" />
                       Performance Marketing
                     </Link>
                   </li>
@@ -322,7 +324,7 @@ function NavBar() {
 
             <li>
               <Link
-                href={'/'}
+                href={'/about'}
                 className={
                   currentPath === internalLinks.aboutUs
                     ? "active-link"
@@ -337,7 +339,7 @@ function NavBar() {
             {/* <li>Project</li> */}
             <li>
               <Link
-                href={'/'}
+                href={'/contact'}
                 className={
                   currentPath === internalLinks.contact
                     ? "active-link"
