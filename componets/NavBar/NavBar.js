@@ -99,8 +99,8 @@ function NavBar() {
   return (
     <nav className="main-nav">
       {isMobile ? (
-        // <MobileNav isMobile={isMobile} handleShrink={handleShrink} />
-        <h1>gg</h1>
+        <MobileNav isMobile={isMobile} handleShrink={handleShrink} />
+        // <h1>gg</h1>
       ) : (
         <>
           <div className="nav-main-logo">
@@ -156,7 +156,7 @@ function NavBar() {
               >
                 <div>
                   <li>
-                    <Link href={'/servieces/web-development'}>
+                    <Link href={'/services/web-development'}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="95"
@@ -181,7 +181,7 @@ function NavBar() {
                     </Link>
                   </li>
                   <li>
-                    <Link href={'/servieces/branding'}>
+                    <Link href={'/services/branding'}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="95"
@@ -206,7 +206,7 @@ function NavBar() {
                     </Link>
                   </li>
                   <li>
-                    <Link href={'/servieces/creative-design'}>
+                    <Link href={'/services/creative-design'}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="95"
@@ -234,7 +234,7 @@ function NavBar() {
 
                 <div>
                   <li>
-                    <Link href={'/servieces/seo'}>
+                    <Link href={'/services/seo'}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="95"
@@ -259,7 +259,7 @@ function NavBar() {
                     </Link>
                   </li>
                   <li>
-                    <Link href={'/servieces/social-media-management'}>
+                    <Link href={'/services/social-media-management'}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="95"
@@ -284,7 +284,7 @@ function NavBar() {
                     </Link>
                   </li>
                   <li>
-                    <Link href={'/servieces/performance-marketing'}>
+                    <Link href={'/services/performance-marketing'}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="95"

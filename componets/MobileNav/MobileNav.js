@@ -17,7 +17,8 @@ import "./MobileNav.css";
 import MainLogo from "@/./public/Assets/Logos/MainLogo.webp";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import Link from "next/link";
-export default function MobileNav({ handleShrink }) {
+import Image from "next/image";
+export default function MobileNav({ handleShrink,isMobile }) {
   const [state, setState] = React.useState({
     top: false,
     left: false,
@@ -79,7 +80,7 @@ export default function MobileNav({ handleShrink }) {
               </Link>
             </ListItem>
             <ListItem>
-              <Link href={internalLinks.services.seo}>
+              <Link href={'/'}>
                 <ListItemText>Search Engine Optimization</ListItemText>
               </Link>
             </ListItem>
@@ -131,8 +132,8 @@ export default function MobileNav({ handleShrink }) {
   return (
     <div className="mobile-nav">
       <div className="mobile-nav-logo">
-        <Link to={'/'}>
-          <img src={MainLogo} alt="Nav Rec" />
+        <Link href={'/'}>
+          <Image width={164} href={40} src={MainLogo} alt="Nav Rec" />
         </Link>
       </div>
       <MenuIcon onClick={toggleDrawer("right", true)} />
