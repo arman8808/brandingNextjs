@@ -14,7 +14,10 @@ import ServicesMidRightImg from "../../../public/Assets/Services-Creative-Design
 import MonkeyComp from "../../../componets/MonkeyComp/MonkeyComp";
 import ServicesFAQ from "../../../componets/ServicesFAQ/ServicesFAQ";
 
-
+export const metadata = {
+  title: ' Best Graphic design company Dubai | Branding 360',
+  description: 'Branding 360 is a top graphic design company in Dubai. Providing best graphic design services in Dubai and offer solutions that meet design and printing needs in dubai',
+}
 const page = () => {
     const infoContainerData = {
         leftGlobeFrontImg: ServicesInfoImg,

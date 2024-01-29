@@ -14,7 +14,11 @@ import section3Card3 from "../../public/Assets/StaffAugmentation/img(2).webp";
 import section4BGImage from "../../public/Assets/StaffAugmentation/image 16(1).webp";
 import section4SideImage from "../../public/Assets/StaffAugmentation/joyful-young-beautiful-girl-doing-call-sign-showing-empty-hand-isolated-orange-space 1.webp";
 import Image from 'next/image';
-
+export const metadata = {
+  title: "Staff Augmentation Services In Dubai  | Branding 360",
+  description:
+    "Are you looking for contract staffing services in the UAE? Branding 360 Outsourcing is a trustworthy and reliable name known for providing the best employment solutions.",
+};
 const page = () => {
   const startsAtComp = (
     <div className="staff-pricing">

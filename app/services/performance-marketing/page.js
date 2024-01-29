@@ -12,7 +12,10 @@ import ServicesMidRightImg from "../../../public/Assets/Services-PM/PMmidRightIm
 import MonkeyComp from "../../../componets/MonkeyComp/MonkeyComp";
 import ServicesLatestWork from "../../../componets/ServicesLatestWork/ServicesLatestWork";
 import ServicesFAQ from "../../../componets/ServicesFAQ/ServicesFAQ";
-
+export const metadata = {
+  title: 'Best Performance Marketing Company In Dubai | Branding 360',
+  description: 'Branding 360 is a top performance marketing agency in Dubai. Specializing in digital performance, paid search performance in dubai, display ads, and social ads services in dubai.',
+}
 const page = () => {
     const infoContainerData = {
         leftGlobeFrontImg: ServicesInfoImg,

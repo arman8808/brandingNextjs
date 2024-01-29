@@ -2,7 +2,7 @@
 // import NavBar from "@componets/NavBar/NavBar";
 import NavBar from "@/componets/NavBar/NavBar";
 import Image from "next/image";
-import '@/styles/globals.css'
+import "@/styles/globals.css";
 import { useEffect, useRef, useState } from "react";
 import HomeBannerImg from "../public/Assets/Home/HomeBannerImg.jpeg";
 import HomeHelpBgImg from "../public/Assets/Home/HomeHelpBgImg.jpeg";
@@ -40,8 +40,9 @@ import Link from "next/link";
 import NewHelpSection from "@/componets/NewHelpSection/NewHelpSection";
 import CreativeWorksSection from "@/componets/CreativeWorksSection/CreativeWorksSection";
 import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 import Marquee from "react-fast-marquee";
-console.log(HomeBannerImg)
+console.log(HomeBannerImg);
 export default function Home() {
   const homeBannerStyle = {
     backgroundImage: `url("/Assets/Home/HomeBannerImg.jpeg")`,
@@ -275,317 +276,335 @@ export default function Home() {
     }
   };
   return (
-    <main
-      className={""}
-    >
-      {/* <NavBar handleShrink={handleShrink} /> */}
-      <div className="home-section app-sections">
-        <div className="home-banner-main" style={homeBannerStyle}>
-          <div className="home-banner-text-section">
-            <h2>Hello There,</h2>
+    <div className="home-section app-sections">
+      <div className="home-banner-main" style={homeBannerStyle}>
+        <div className="home-banner-text-section">
+          <h2>Hello There,</h2>
 
-            <div className="home-banner-text-animation">
-              {headings.map((heading, index) => (
-                <h2
-                  key={index}
-                  className={
-                    index === currentHeadingIndex
-                      ? "slideIn"
-                      : index === (currentHeadingIndex + 1) % headings.length
-                      ? "slideOut"
-                      : ""
-                  }
-                  style={{
-                    animationDelay:
-                      index === currentHeadingIndex ? "0s" : "0.5s", // Adjust this delay
-                  }}
-                >
-                  {heading}
-                </h2>
-              ))}
-            </div>
-            <h2>
-              Driving Business Expansion through a Cutting-Edge Brand Marketing
-              Strategy!
-            </h2>
-
-            <button onClick={scrollToServices} className="app-yellow-buttons">
-              DISCOVER MORE
-            </button>
-          </div>
-
-          <div className="home-banner-cards-section">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="136"
-              height="143"
-              viewBox="0 0 136 143"
-              fill="none"
-              className="home-banner-svg-left"
-            >
-              <circle cx="46.0616" cy="52.9703" r="89.8194" fill="#FFBB00" />
-            </svg>
-            <div className="home-banner-card">
-              <Image width={0} height={0} src={HomeBannerCardsImg1} />
-              <div>
-                <h4>Design your Business</h4>
-                <span>
-                  Crafting Your Business Triumph: Transforming Ideas into
-                  Impactful Success Stories!
-                </span>
-              </div>
-            </div>
-            <div className="home-banner-card">
-              <Image width={0} height={0} src={HomeBannerCardsImg2} />
-              <div>
-                <h4>Brand Marketing </h4>
-                <span>
-                  Embarking on the Digital Journey: Initiating Your Presence and
-                  Brand Marketing Evolution.
-                </span>
-              </div>
-            </div>
-            <div className="home-banner-card">
-              <Image width={0} height={0} src={HomeBannerCardsImg3} />
-              <div>
-                <h4>Marketing Strategy </h4>
-                <span>
-                  The Intersection of Success and Marketing Strategy: Reshaping
-                  Businesses into Enduring Brands!
-                </span>
-              </div>
-            </div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="148"
-              height="134"
-              viewBox="0 0 148 134"
-              fill="none"
-              className="home-banner-svg-right"
-            >
-              <circle cx="89.9444" cy="90.492" r="89.8194" fill="#6EB3EC" />
-            </svg>
-          </div>
-        </div>
-
-        <InfoContainer
-          image={HomeInfoContImg}
-          subheading="// DISCOVER OUR COMPANY"
-          heading="Leading Branding Agency in Dubai: Recognized for Excellence!"
-          text="Our marketing agency adopts a strategy-first methodology, identifying outcome-driven plans that align with your business goals. This involves conducting a thorough online audit, outlining the necessary messaging, services, and content to propel clients towards their growth targets. "
-          text2="Embracing the synergy of creativity, technology, and intelligence, our branding agency in Dubai brings together creative minds, developers, SEO specialists, and social media experts to devise distinctive solutions for our clients. As one of the best marketing agencies in Dubai, Branding 360 Neo LLC can formulate a tailored strategy to meet your specific business needs."
-          cardText={[
-            "At the forefront of branding and marketing companies in Dubai, we specialize in crafting outcome-driven campaigns and strategies that uniquely capture the essence and merits of brands.",
-            "As a prominent marketing agency in the UAE, we emphasize collaboration and iteration, ensuring steadfast support throughout the entire branding process.",
-            "Whether it's web design, social media presence, or performance marketing, our marketing agency places a premium on creating impactful and targeted interactions.",
-          ]}
-          readMore="true"
-        />
-        <br />
-
-        <div className="home-sbout-us-heading">
-          <h2>Staff Augmentation Solutions</h2>
-          <div className="home-about-us-heading-right">
-            <h4>Innovate.</h4>
-            <h4>Engage.</h4>
-            <h4>Succeed.</h4>
-          </div>
-        </div>
-
-        <div className="home-staff-heading-mobile">
-          <h2>Staff Augmentation Solutions</h2>
-        </div>
-
-        <div className="home-about-us-info-top-new-section">
-          <div className="home-about-us-info-top-new-sub-section">
-            <div className="home-about-us-top-new-left">
-              <h2 className="home-about-new-heading">
-                Unlock the potential of skillful professionals and elevate your
-                brand's competence through Branding 360 Neo &nbsp;
-                <span className="app-yellow-text">Staff Augmentation</span>{" "}
-                Services
+          <div className="home-banner-text-animation">
+            {headings.map((heading, index) => (
+              <h2
+                key={index}
+                className={
+                  index === currentHeadingIndex
+                    ? "slideIn"
+                    : index === (currentHeadingIndex + 1) % headings.length
+                    ? "slideOut"
+                    : ""
+                }
+                style={{
+                  animationDelay: index === currentHeadingIndex ? "0s" : "0.5s", // Adjust this delay
+                }}
+              >
+                {heading}
               </h2>
-              <span>
-                By leveraging Branding 360’s staff augmentation solutions, you
-                can effortlessly elevate your team's abilities without the
-                hassles associated with hiring and training processes.
-              </span>
-              <div className="home-about-new-buttons-section">
-                <Link href={"/"}>
-                  <button className="app-yellow-buttons">
-                    Contact Us &nbsp;{" "}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="25"
-                      viewBox="0 0 24 25"
-                      fill="none"
-                    >
-                      <g clip-path="url(#clip0_893_4047)">
-                        <path
-                          d="M5.5 13.5002L18 6.50023M16.25 24.0002H16.5C17.4938 16.3819 19.6891 8.96921 23.004 2.03823L23.26 1.50023L23 1.24023L22.462 1.49623C15.531 4.81121 8.11838 7.00645 0.5 8.00023V8.25023L5.5 13.2502V21.0002H5.75L7.524 19.3102C8.22291 18.645 8.99952 18.0665 9.837 17.5872L16.25 24.0002Z"
-                          stroke="black"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_893_4047">
-                          <rect
-                            width="24"
-                            height="24"
-                            fill="white"
-                            transform="translate(0 0.5)"
-                          />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </button>
-                </Link>
+            ))}
+          </div>
+          <h2>
+            Driving Business Expansion through a Cutting-Edge Brand Marketing
+            Strategy!
+          </h2>
 
-                <Link href={"/"}>
-                  <button className="app-yellow-buttons">
-                    Know More &nbsp;{" "}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="25"
-                      viewBox="0 0 24 25"
-                      fill="none"
-                    >
-                      <g clip-path="url(#clip0_893_4047)">
-                        <path
-                          d="M5.5 13.5002L18 6.50023M16.25 24.0002H16.5C17.4938 16.3819 19.6891 8.96921 23.004 2.03823L23.26 1.50023L23 1.24023L22.462 1.49623C15.531 4.81121 8.11838 7.00645 0.5 8.00023V8.25023L5.5 13.2502V21.0002H5.75L7.524 19.3102C8.22291 18.645 8.99952 18.0665 9.837 17.5872L16.25 24.0002Z"
-                          stroke="black"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_893_4047">
-                          <rect
-                            width="24"
-                            height="24"
-                            fill="white"
-                            transform="translate(0 0.5)"
-                          />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </button>
-                </Link>
-              </div>
-            </div>
-            <div className="home-about-us-top-new-right">
-              <Image width={0} height={0} src={HomeAboutUsNewInfoMainImg} alt="About Us Main" />
-            </div>
-          </div>
-          <div className="home-about-us-new-bottom">
-            <Image width={0} height={0} src={HomeAboutUsNewInfoBottomImg} alt="About US" />
-          </div>
+          <button onClick={scrollToServices} className="app-yellow-buttons">
+            DISCOVER MORE
+          </button>
         </div>
 
-        <NewHelpSection />
-        <div className="home-about-us-info-section" ref={servicesRef}>
-          <div className="home-about-us-background-layer">
-            <Image width={0} height={0} src={HomeAboutUsBotFrameImg} />
-            <h2>SERVICES</h2>
-          </div>
-          <div className="home-about-us-info-top">
-            <h3>What We Offer!</h3>
-            <span>
-              As one of the reputable branding companies in Dubai, we leverage
-              our profound comprehension of business needs and behaviors. Our
-              commitment is to offer guidance on the most suitable solutions and
-              devise customized brand marketing strategies tailored exclusively
-              for your brand.
-            </span>
-            <div className="home-about-us-info-top-cards-section">
-              {renderedHomeInfoCards}
-            </div>
-          </div>
-        </div>
-
-        <CreativeWorksSection />
-
-        <div className="home-our-clients-section" style={homeClientsStyle}>
-          <div className="home-our-clients-top-text">
-            <h2 className="app-yellow-text">
-              Our Clients Love us and We Love Them
-            </h2>
-            <span>
-              We've assisted outstanding brands in reaching new heights.
-            </span>
-          </div>
-
-          <div className="home-clients-card">
-            <button onClick={(e) => carousel?.current?.slidePrev(e)}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="44"
-                height="45"
-                viewBox="0 0 44 45"
-                fill="none"
-              >
-                <path
-                  d="M25.5208 13.3384L26.9629 14.8835L19.3402 22.6092L26.9629 30.3349L25.5208 31.88L16.2499 22.6092L25.5208 13.3384Z"
-                  fill="black"
-                />
-              </svg>
-            </button>
-            <AliceCarousel
-              items={homeClientTestimonialsCarousalData}
-              mouseTracking
-              autoPlay
-              autoPlayInterval={2000}
-              autoPlayStrategy={"all"}
-              infinite
-              ref={carousel}
-              disableDotsControls
-              disableButtonsControls
-            />
-            <button onClick={(e) => carousel?.current?.slideNext(e)}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="45"
-                height="45"
-                viewBox="0 0 45 45"
-                fill="none"
-              >
-                <path
-                  d="M18.8249 13.3384L17.3828 14.8835L25.0055 22.6092L17.3828 30.3349L18.8249 31.88L28.0958 22.6092L18.8249 13.3384Z"
-                  fill="black"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-
-
-        <div className="home-our-clients-showcase-section">
-          <Image width={0} height={0} src={HomeClientsDogImg} alt="Dog" />
-          <div
-            className="home-our-clients-showcase"
-            style={homeClientsShowcaseStyle}
+        <div className="home-banner-cards-section">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="136"
+            height="143"
+            viewBox="0 0 136 143"
+            fill="none"
+            className="home-banner-svg-left"
           >
-            <div className="home-clinets-showcase-left">
-              <h3>CLIENTS</h3>
-              <h2 className="app-yellow-text">Clients We Worked With!</h2>
-              <h4>We've helped exceptional brands soar to new heights.</h4>
-            </div>
-            <div className="about-us-clients-marquee-section">
-              <Marquee direction="left">
-                <Image width={0} height={0} src={AboutUsClientsMarqueeImg1} alt="Our Clients" />
-              </Marquee>
-              <br />
-              <Marquee direction="right">
-                <Image width={0} height={0} src={AboutUsClientsMarqueeImg2} alt="Our Clients" />
-              </Marquee>
-              <br />
+            <circle cx="46.0616" cy="52.9703" r="89.8194" fill="#FFBB00" />
+          </svg>
+          <div className="home-banner-card">
+            <Image width={0} height={0}  src={HomeBannerCardsImg1} />
+            <div>
+              <h4>Design your Business</h4>
+              <span>
+                Crafting Your Business Triumph: Transforming Ideas into
+                Impactful Success Stories!
+              </span>
             </div>
           </div>
-        </div>
-
-        <div className="page-bottom-monkey">
-          <Image width={0} height={0} src={AboutUsMonkeyImg} alt="Clever Monkey" />
+          <div className="home-banner-card">
+            <Image width={0} height={0} src={HomeBannerCardsImg2} />
+            <div>
+              <h4>Brand Marketing </h4>
+              <span>
+                Embarking on the Digital Journey: Initiating Your Presence and
+                Brand Marketing Evolution.
+              </span>
+            </div>
+          </div>
+          <div className="home-banner-card">
+            <Image width={0} height={0} src={HomeBannerCardsImg3} />
+            <div>
+              <h4>Marketing Strategy </h4>
+              <span>
+                The Intersection of Success and Marketing Strategy: Reshaping
+                Businesses into Enduring Brands!
+              </span>
+            </div>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="148"
+            height="134"
+            viewBox="0 0 148 134"
+            fill="none"
+            className="home-banner-svg-right"
+          >
+            <circle cx="89.9444" cy="90.492" r="89.8194" fill="#6EB3EC" />
+          </svg>
         </div>
       </div>
-    </main>
+
+      <InfoContainer
+        image={HomeInfoContImg}
+        subheading="// DISCOVER OUR COMPANY"
+        heading="Leading Branding Agency in Dubai: Recognized for Excellence!"
+        text="Our marketing agency adopts a strategy-first methodology, identifying outcome-driven plans that align with your business goals. This involves conducting a thorough online audit, outlining the necessary messaging, services, and content to propel clients towards their growth targets. "
+        text2="Embracing the synergy of creativity, technology, and intelligence, our branding agency in Dubai brings together creative minds, developers, SEO specialists, and social media experts to devise distinctive solutions for our clients. As one of the best marketing agencies in Dubai, Branding 360 Neo LLC can formulate a tailored strategy to meet your specific business needs."
+        cardText={[
+          "At the forefront of branding and marketing companies in Dubai, we specialize in crafting outcome-driven campaigns and strategies that uniquely capture the essence and merits of brands.",
+          "As a prominent marketing agency in the UAE, we emphasize collaboration and iteration, ensuring steadfast support throughout the entire branding process.",
+          "Whether it's web design, social media presence, or performance marketing, our marketing agency places a premium on creating impactful and targeted interactions.",
+        ]}
+        readMore="true"
+      />
+      <br />
+
+      <div className="home-sbout-us-heading">
+        <h2>Staff Augmentation Solutions</h2>
+        <div className="home-about-us-heading-right">
+          <h4>Innovate.</h4>
+          <h4>Engage.</h4>
+          <h4>Succeed.</h4>
+        </div>
+      </div>
+
+      <div className="home-staff-heading-mobile">
+        <h2>Staff Augmentation Solutions</h2>
+      </div>
+
+      <div className="home-about-us-info-top-new-section">
+        <div className="home-about-us-info-top-new-sub-section">
+          <div className="home-about-us-top-new-left">
+            <h2 className="home-about-new-heading">
+              Unlock the potential of skillful professionals and elevate your
+              brand's competence through Branding 360 Neo &nbsp;
+              <span className="app-yellow-text">Staff Augmentation</span>{" "}
+              Services
+            </h2>
+            <span>
+              By leveraging Branding 360’s staff augmentation solutions, you can
+              effortlessly elevate your team's abilities without the hassles
+              associated with hiring and training processes.
+            </span>
+            <div className="home-about-new-buttons-section">
+              <Link href={"/"}>
+                <button className="app-yellow-buttons">
+                  Contact Us &nbsp;{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_893_4047)">
+                      <path
+                        d="M5.5 13.5002L18 6.50023M16.25 24.0002H16.5C17.4938 16.3819 19.6891 8.96921 23.004 2.03823L23.26 1.50023L23 1.24023L22.462 1.49623C15.531 4.81121 8.11838 7.00645 0.5 8.00023V8.25023L5.5 13.2502V21.0002H5.75L7.524 19.3102C8.22291 18.645 8.99952 18.0665 9.837 17.5872L16.25 24.0002Z"
+                        stroke="black"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_893_4047">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(0 0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </Link>
+
+              <Link href={"/"}>
+                <button className="app-yellow-buttons">
+                  Know More &nbsp;{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_893_4047)">
+                      <path
+                        d="M5.5 13.5002L18 6.50023M16.25 24.0002H16.5C17.4938 16.3819 19.6891 8.96921 23.004 2.03823L23.26 1.50023L23 1.24023L22.462 1.49623C15.531 4.81121 8.11838 7.00645 0.5 8.00023V8.25023L5.5 13.2502V21.0002H5.75L7.524 19.3102C8.22291 18.645 8.99952 18.0665 9.837 17.5872L16.25 24.0002Z"
+                        stroke="black"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_893_4047">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(0 0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </Link>
+            </div>
+          </div>
+          <div className="home-about-us-top-new-right">
+            <Image
+              width={0}
+              height={0}
+              src={HomeAboutUsNewInfoMainImg}
+              alt="About Us Main"
+            />
+          </div>
+        </div>
+        <div className="home-about-us-new-bottom">
+          <Image
+            width={0}
+            height={0}
+            src={HomeAboutUsNewInfoBottomImg}
+            alt="About US"
+          />
+        </div>
+      </div>
+
+      <NewHelpSection />
+      <div className="home-about-us-info-section" ref={servicesRef}>
+        <div className="home-about-us-background-layer">
+          <Image width={0} height={0} src={HomeAboutUsBotFrameImg} />
+          <h2>SERVICES</h2>
+        </div>
+        <div className="home-about-us-info-top">
+          <h3>What We Offer!</h3>
+          <span>
+            As one of the reputable branding companies in Dubai, we leverage our
+            profound comprehension of business needs and behaviors. Our
+            commitment is to offer guidance on the most suitable solutions and
+            devise customized brand marketing strategies tailored exclusively
+            for your brand.
+          </span>
+          <div className="home-about-us-info-top-cards-section">
+            {renderedHomeInfoCards}
+          </div>
+        </div>
+      </div>
+
+      <CreativeWorksSection />
+
+      <div className="home-our-clients-section" style={homeClientsStyle}>
+        <div className="home-our-clients-top-text">
+          <h2 className="app-yellow-text">
+            Our Clients Love us and We Love Them
+          </h2>
+          <span>
+            We've assisted outstanding brands in reaching new heights.
+          </span>
+        </div>
+
+        <div className="home-clients-card">
+          <button onClick={(e) => carousel?.current?.slidePrev(e)}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="45"
+              viewBox="0 0 44 45"
+              fill="none"
+            >
+              <path
+                d="M25.5208 13.3384L26.9629 14.8835L19.3402 22.6092L26.9629 30.3349L25.5208 31.88L16.2499 22.6092L25.5208 13.3384Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+          <AliceCarousel
+            items={homeClientTestimonialsCarousalData}
+            mouseTracking
+            autoPlay
+            autoPlayInterval={2000}
+            autoPlayStrategy={"all"}
+            infinite
+            ref={carousel}
+            disableDotsControls
+            disableButtonsControls
+          />
+          <button onClick={(e) => carousel?.current?.slideNext(e)}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="45"
+              height="45"
+              viewBox="0 0 45 45"
+              fill="none"
+            >
+              <path
+                d="M18.8249 13.3384L17.3828 14.8835L25.0055 22.6092L17.3828 30.3349L18.8249 31.88L28.0958 22.6092L18.8249 13.3384Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div className="home-our-clients-showcase-section">
+        <Image width={0} height={0} src={HomeClientsDogImg} alt="Dog" />
+        <div
+          className="home-our-clients-showcase"
+          style={homeClientsShowcaseStyle}
+        >
+          <div className="home-clinets-showcase-left">
+            <h3>CLIENTS</h3>
+            <h2 className="app-yellow-text">Clients We Worked With!</h2>
+            <h4>We've helped exceptional brands soar to new heights.</h4>
+          </div>
+          <div className="about-us-clients-marquee-section">
+            <Marquee direction="left">
+              <Image
+                width={0}
+                height={0}
+                src={AboutUsClientsMarqueeImg1}
+                alt="Our Clients"
+              />
+            </Marquee>
+            <br />
+            <Marquee direction="right">
+              <Image
+                width={0}
+                height={0}
+                src={AboutUsClientsMarqueeImg2}
+                alt="Our Clients"
+              />
+            </Marquee>
+            <br />
+          </div>
+        </div>
+      </div>
+
+      <div className="page-bottom-monkey">
+        <Image
+          width={0}
+          height={0}
+          src={AboutUsMonkeyImg}
+          alt="Clever Monkey"
+        />
+      </div>
+    </div>
   );
 }

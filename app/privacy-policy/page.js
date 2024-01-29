@@ -1,6 +1,10 @@
 import React from 'react'
 import '@/styles/globals.css'
 import Link from 'next/link'
+export const metadata = {
+  title: 'Our Portfolio | Branding 360',
+  description: 'Some examples of branding, logo design, website development, and website design work you can do with us in Dubai and the UAE. We are the best branding agency in Dubai contact us now.',
+}
 const page = () => {
   return (
   <div style={{width:'100%',display:'flex',alignItems:'center',justifyContent:'center'}}>

@@ -1,5 +1,9 @@
 import React from 'react'
-
+export const metadata = {
+  title: "Terms And Conditions | Branding 360",
+  description:
+    "By accessing and using our website www.branding360.ae, you expressly acknowledge that we protect the content and information on the website under UAE copyright and trademark laws.",
+};
 const page = () => {
   return (
     <div style={{width:'100%',display:'flex',alignItems:'center',justifyContent:'center'}}>  <div className="privacy-policy">

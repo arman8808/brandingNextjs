@@ -11,6 +11,10 @@ import ServicesMidRightImg from "../../../public/Assets/Services-SEO/SeoMidRight
 import MonkeyComp from "../../../componets/MonkeyComp/MonkeyComp";
 import ServicesLatestWork from "../../../componets/ServicesLatestWork/ServicesLatestWork";
 import ServicesFAQ from "../../../componets/ServicesFAQ/ServicesFAQ";
+export const metadata = {
+  title: 'Best SEO Services In Dubai | Branding 360',
+  description: 'We are the top SEO agency in dubai. Boost your website with our SEO services in Dubai.We are the most experienced and top 10 SEO Companies in Dubai.',
+}
 const page = () => {
   const infoContainerData = {
     leftGlobeFrontImg: ServicesInfoImg,

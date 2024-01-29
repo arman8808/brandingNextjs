@@ -9,6 +9,7 @@ import CallIcon from "@mui/icons-material/Call";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import companyData from "../../componets/CompanyData";
 
+
 const page = () => {
     const [isClient, setIsClient] = useState(false);
 

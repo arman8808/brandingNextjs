@@ -13,6 +13,10 @@ import ServicesMidRightImg from "../../../public/Assets/Services-SMM/SMMmIdRight
 import MonkeyComp from "../../../componets/MonkeyComp/MonkeyComp";
 import ServicesLatestWork from "../../../componets/ServicesLatestWork/ServicesLatestWork";
 import ServicesFAQ from "../../../componets/ServicesFAQ/ServicesFAQ";
+export const metadata = {
+  title: 'Top Social media agency in Dubai | Branding 360',
+  description: 'Branding 360 is one of the top social media agency in Dubai. Our team provides social media advertising service in Dubai, promotion, and lead generation service In Dubai.',
+}
 const page = () => {
     const infoContainerData = {
         leftGlobeFrontImg: ServicesInfoImg,

@@ -14,7 +14,10 @@ import ServicesMidRightImg from "../../../public/Assets/Services-Web-Dev/WebDevM
 import NeedHelpMain from "../../../componets/NeedHelpMain/NeedHelpMain";
 import ServicesLatestWork from "../../../componets/ServicesLatestWork/ServicesLatestWork";
 import ServicesFAQ from "../../../componets/ServicesFAQ/ServicesFAQ";
-
+export const metadata = {
+  title: 'Web design and website development company In Dubai',
+  description: 'Branding 360 is a top web design and website development company in Dubai. We offers top-notch web development services in dubai tailored to your business needs.',
+}
 
 const page = () => {
     const infoContainerData = {

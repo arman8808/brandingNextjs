@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="body">
-        <div style={{width:'100%',display:'flex',alignItems:'center',justifyContent:'center',position:'sticky',top:'20px'}}><NavBar/></div>
+        <div style={{width:'100%',display:'flex',alignItems:'center',justifyContent:'center',position:'sticky',top:'20px',zIndex:'11111'}}><NavBar/></div>
         {children}
       <Footer/>
       </body>

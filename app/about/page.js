@@ -19,6 +19,8 @@ import MainLogo from "../../public/Assets/Logos/MainLogo.webp";
 import { internalLinks } from "../../componets/internalLinks";
 import Link from "next/link";
 import Image from "next/image";
+
+
 const page = () => {
   useEffect(() => {
     const logo = document.getElementById("logo");

@@ -24,9 +24,9 @@ function InfoContainer({
   return (
     <div className="info-container-section">
       <div className="info-container-image-section">
-        <Image width={0} height={0} src={GlobeBGImg} className="info-globe-background" />
-        <Image width={0} height={0} src={GlobeTopImg} className="info-globe-top" />
-        <Image width={0} height={0} src={image} className="info-globe-top-main" />
+        <Image objectFit="fill" src={GlobeBGImg} className="info-globe-background" />
+        <Image objectFit="fill" src={GlobeTopImg} className="info-globe-top" />
+        <Image objectFit="fill" src={image} className="info-globe-top-main" />
       </div>
       <div className="info-container-text-section">
         <h4 className="app-yellow-text">{subheading}</h4>
