@@ -97,6 +97,9 @@
 
 .home-info-card-text-section > span {
   overflow: hidden;
+
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 .home-info-card-text-section > h4 {
